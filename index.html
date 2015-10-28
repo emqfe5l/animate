@@ -1,17 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta charset="utf-8">
-  <title>animate</title>
-
+ <meta charset="UTF-8">
+ <title>test</title>
+ <script type="text/javascript" src="js/app.js"></script>
 </head>
-
 <body>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/main.js"></script>
-  <script type="text/javascript" src="javascripts/ivansimeyko.js"></script>
-
+	<style type="text/css">
+	#anim {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+	}
+	#portal1{
+		width: 20px;
+		height: 110px;
+		position: absolute;
+		left: 10px;
+		bottom: 0px;
+		border-left: 20px orange solid;
+		border-radius: 50px;
+	}
+	#portal2 {
+		width: 20px;
+		height: 110px;
+		position: absolute;
+		left: 350px;
+		bottom: 0px;
+		border-right: 20px blue solid;
+		border-radius: 50px;
+	}
+	</style>
+ 	<!-- <marquee direction="right" scrollamount="1"><img src="image/anim.gif"></marque> -->
+ 	<div id="anim">
+ 		<img id="x" src="image/anim.gif">
+ 	</div>
+ 	<div id="portal1"></div>
+ 	<div id="portal2"></div>
+ 	
+ 	
 </body>
 </html>
