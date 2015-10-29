@@ -24,7 +24,7 @@
 
 
 
-	function animateObject(obj) {
+	function animateElement(obj) {
 
 		var screenWidth = document.documentElement.clientWidth;
 		//var screenHeight = document.documentElement.clientHeight;
@@ -45,9 +45,9 @@
 		element.style.left = left + "px";
 		element.style.top = top + "px";
 
-		requestAnimationFrame(animateObject);
+		requestAnimationFrame(animateElement);
 	};
-	animateObject(element);
+	animateElement(element);
 
 })();
 
