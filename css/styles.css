@@ -24,6 +24,7 @@
 .mirror {
   transform: scaleX(-1);
 }
+<<<<<<< HEAD
     .main{
     height: 600px;
     width: 700px;
@@ -148,3 +149,12 @@
     background-color: darkolivegreen;
     border-radius: 0px;
 }
+=======
+.letter {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  font: 600px Arial,sans-serif;
+  color: #333;
+}
+>>>>>>> fed204e2a32e60233bd498b3e1e5ce78e7027688
