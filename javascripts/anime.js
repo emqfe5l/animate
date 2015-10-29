@@ -1,3 +1,6 @@
+
+var animate = animate || {};
+animate.smollSmile = (function(){
 (function() {
     var object = document.createElement('div');
 
@@ -53,4 +56,20 @@
         requestAnimationFrame(animateObject);
     };
     animateObject(object);
+})();
+
+    return {
+        init: function () {
+            _smollSmile.className = _normalClass;
+            document.body.appendChild(_smollSmile);
+
+            _smollSmileLeftPosition = parseInt( window.getComputedStyle(_smollSmile, null).getPropertyValue("left"), 10);
+            _windowWidth = window.innerWidth;
+            _stoped = false;
+            animate(_options);
+        },
+        stop: function () {
+            _stoped = true;
+        }
+    };
 })();
