@@ -25,8 +25,8 @@
 
 // goRight();
 
-var animateUnit = animateUnit || {};
-animateUnit.unit = (function(){
+var animate = animate || {};
+animate.unit = (function(){
    var _unit = document.createElement("div"),
     _normalClass = 'animatated-object unit',
     _mirroredClass = _normalClass + ' mirror',
@@ -55,11 +55,11 @@ animateUnit.unit = (function(){
       }
   };
 
-  function animateUnit(options) {
-    requestAnimationFrame(function animateUnit() {
+  function animate(options) {
+    requestAnimationFrame(function animate() {
       options.draw();
       if (!_stoped) {
-        requestAnimationFrame(animateUnit);
+        requestAnimationFrame(animate);
       }
     });
   }
@@ -72,7 +72,7 @@ animateUnit.unit = (function(){
       _unitLeftPosition = parseInt( window.getComputedStyle(_unit, null).getPropertyValue("left"), 10);
       _windowWidth = window.innerWidth;
       _stoped = false;
-      animateUnit(_options);
+      animate(_options);
     },
     stop: function () {
       _stoped = true;
