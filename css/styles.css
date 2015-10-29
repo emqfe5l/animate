@@ -13,6 +13,14 @@
   height: 160px;
   background: url(https://js.cx/clipart/train.gif) ;
 }
+.unit {
+  top: 160px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  background: url(http://theoldnewbie.github.io/Anim/image/move.gif) no-repeat center;
+  background-size: 100% 100px;
+}
 .mirror {
   transform: scaleX(-1);
 }
