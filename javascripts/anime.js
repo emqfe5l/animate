@@ -1,6 +1,8 @@
 
 var animate = animate || {};
 animate.smollSmile = (function(){
+        var _smollSmile = document.createElement("div"),
+        _stoped = true,
 (function() {
     var object = document.createElement('div');
 
