@@ -24,3 +24,127 @@
 .mirror {
   transform: scaleX(-1);
 }
+    .main{
+    height: 600px;
+    width: 700px;
+    /*border: solid 1px;*/
+    position:absolute;
+}
+
+.circle{
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.square{
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+}
+.square2{
+    position:absolute;
+    height: 3px;
+    width: 3px;
+    border-radius: 1px;
+    background-color: red;
+}
+
+.counter{
+    display:inline-block;
+    height: 20px;
+    width: 80px;
+    background-color: aqua;
+}
+
+.main{
+     height: 600px;
+     width: 700px;
+     /*border: solid 1px;*/
+     position:absolute;
+ }
+
+.circle{
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.square{
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+}
+
+.counter{
+    display:inline-block;
+    height: 20px;
+    width: 80px;
+    background-color: aqua;
+}
+
+.counter2{
+    display:inline-block;
+    height: 20px;
+    width: 80px;
+    background-color: cadetblue;
+}
+.ufo{
+    position:absolute;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    //border-radius: 100px/40px;
+    transform: rotate(0deg);
+}
+
+
+.leftCat{
+    position:absolute;
+    height: 40px;
+    width: 10px;
+    background-color: dimgray;
+}
+
+.rightCat{
+    position:absolute;
+    height: 40px;
+    width: 10px;
+    left: 30px;
+    background-color: dimgray;
+}
+
+.case{
+    position:absolute;
+    height: 30px;
+    width: 20px;
+    left: 10px;
+    top: 5px;
+    background-color: darkgray;
+}
+
+.tower{
+    position:absolute;
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    top: 5px;
+    background-color: dimgray;
+    border-radius: 8px
+}
+
+.gun{
+    position:absolute;
+    height: 15px;
+    width: 4px;
+    left: 9px;
+    top: -9px;
+    background-color: darkolivegreen;
+    border-radius: 0px;
+}
