@@ -58,6 +58,38 @@ animate.smollSmile = (function(){
 
     animateObject(object);
 
+    // определение позиции элемента
+    function getPosition(object){
+        console.log ('getPosition');
+        //console.log( object );
+        var top=0, left=0;
+        while( object ) {
+            top = top + parseFloat(object.offsetTop);
+            left = left + parseFloat(object.offsetLeft);
+            object = object.offsetParent
+        }
+        return {top: Math.round(top), left: Math.round(left)}
+    }
+
+    // определение размера элемента
+    function getSize(object){
+        console.log ('getSize');
+        //console.log( object );
+         var width =  parseFloat(object.style.width);
+         var height = left + parseFloat(object.style.height);
+            //object = object.offsetParent
+         return {width: Math.round(width), height: Math.round(height)}
+    }
+
+    function remove( object ) {
+        console.log ('remove');
+        object.parentNode.removeChild(object);
+    }
+
+    console.log( getPosition(object));
+    console.log( getSize(object));
+    remove(object)
+
 })();
 
     return {
@@ -75,3 +107,5 @@ animate.smollSmile = (function(){
         }
     };
 })();
+
+
